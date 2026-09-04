@@ -67,6 +67,23 @@ This project demonstrates practical skills in:
 - Data visualization
 - Responsive web design
 - GitHub and GitHub Pages deployment
+- ## 📸 Project Screenshots
+
+### 🏠 Dashboard
+
+![Dashboard](dashboard.png)
+
+### 👥 Candidates
+
+![Candidates](candidates.png)
+
+### 📅 Interviews
+
+![Interviews](interviews.png)
+
+### 📊 Analytics
+
+![Analytics](analytics.png)
 
 ## 👩‍💻 Author
 

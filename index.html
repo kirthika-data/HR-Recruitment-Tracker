@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HR Recruitment Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HR Recruitment Tracker</h1>
+        <p>Manage candidates and track the recruitment process</p>
+    </header>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="add-candidate.html">Add Candidate</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="analytics.html">Analytics</a>
+    </nav>
+
+    <main>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Total Candidates</h3>
+                <p id="totalCandidates">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Interviews</h3>
+                <p id="totalInterviews">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Selected</h3>
+                <p id="selectedCandidates">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Rejected</h3>
+                <p id="rejectedCandidates">0</p>
+            </div>
+            <div class="card">
+                <h3>Selection Rate</h3>
+                <p id="dashboardSelectionRate">0%</p>
+            </div>
+
+        </section>
+
+        <section class="welcome">
+
+            <h2>Welcome to HR Recruitment Tracker</h2>
+            <section class="quick-actions">
+
+    <h2>Quick Actions</h2>
+
+    <div class="action-buttons">
+
+        <a href="add-candidate.html" class="action-button">
+            + Add Candidate
+        </a>
+
+        <a href="interviews.html" class="action-button">
+            📅 Schedule Interview
+        </a>
+
+        <a href="candidates.html" class="action-button">
+            👥 View Candidates
+        </a>
+
+        <a href="analytics.html" class="action-button">
+            📊 View Analytics
+        </a>
+
+    </div>
+
+</section>
+<section class="recent-candidates">
+
+    <h2>Recent Candidates</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Candidate ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="recentCandidatesBody">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+            <p>
+                This system helps HR teams manage candidate information,
+                monitor interviews and track recruitment progress.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

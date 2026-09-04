@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics - HR Recruitment Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HR Recruitment Tracker</h1>
+        <p>Manage candidates and track the recruitment process</p>
+    </header>
+
+
+    <nav>
+
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a href="candidates.html">
+            Candidates
+        </a>
+
+        <a href="add-candidate.html">
+            Add Candidate
+        </a>
+
+        <a href="interviews.html">
+            Interviews
+        </a>
+
+        <a href="analytics.html">
+            Analytics
+        </a>
+
+    </nav>
+
+
+    <main>
+
+        <section class="analytics-container">
+
+            <h2>Recruitment Analytics</h2>
+
+
+            <div class="analytics-cards">
+
+                <div class="card">
+                    <h3>Total Applications</h3>
+                    <p id="analyticsTotal">0</p>
+                </div>
+
+
+                <div class="card">
+                    <h3>Shortlisted</h3>
+                    <p id="analyticsShortlisted">0</p>
+                </div>
+
+
+                <div class="card">
+                    <h3>Interviews</h3>
+                    <p id="analyticsInterviews">0</p>
+                </div>
+
+
+                <div class="card">
+                    <h3>Selected</h3>
+                    <p id="analyticsSelected">0</p>
+                </div>
+
+
+                <div class="card">
+                    <h3>Rejected</h3>
+                    <p id="analyticsRejected">0</p>
+                </div>
+
+
+                <div class="card">
+                    <h3>Selection Rate</h3>
+                    <p id="selectionRate">0%</p>
+                </div>
+
+            </div>
+
+
+            <div class="analytics-section">
+
+                <h2>Candidate Status</h2>
+
+                <div class="status-list">
+
+                    <div>
+                        <span>Applied</span>
+                        <strong id="appliedCount">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Shortlisted</span>
+                        <strong id="shortlistedCount">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Interview</span>
+                        <strong id="interviewCount">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Selected</span>
+                        <strong id="selectedCount">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Rejected</span>
+                        <strong id="rejectedCount">0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="charts-container">
+
+    <div class="chart-box">
+
+        <h2>Candidate Status</h2>
+
+        <canvas id="statusChart"></canvas>
+
+    </div>
+
+
+    <div class="chart-box">
+
+        <h2>Candidates by Position</h2>
+
+        <canvas id="positionChart"></canvas>
+
+    </div>
+
+</div>
+
+
+            <div class="analytics-section">
+
+                <h2>Recruitment Summary</h2>
+
+                <p id="recruitmentSummary">
+                    No recruitment data available yet.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>  
+
+</body>
+
+</html>

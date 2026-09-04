@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interviews - HR Recruitment Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HR Recruitment Tracker</h1>
+        <p>Manage candidates and track the recruitment process</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="add-candidate.html">Add Candidate</a>
+        <a href="interviews.html">Interviews</a>
+       <a href="analytics.html">Analytics</a>
+    </nav>
+
+    <main>
+
+        <section class="form-container">
+
+            <h2>Schedule Interview</h2>
+
+            <form id="interviewForm">
+
+                <label>Candidate Name</label>
+
+                <select id="interviewCandidate" required>
+                    <option value="">Select Candidate</option>
+                </select>
+
+
+                <label>Interview Date</label>
+
+                <input
+                    type="date"
+                    id="interviewDate"
+                    required
+                >
+
+
+                <label>Interview Round</label>
+
+                <select id="interviewRound" required>
+
+                    <option value="">
+                        Select Round
+                    </option>
+
+                    <option value="HR Round">
+                        HR Round
+                    </option>
+
+                    <option value="Technical Round">
+                        Technical Round
+                    </option>
+
+                    <option value="Managerial Round">
+                        Managerial Round
+                    </option>
+
+                    <option value="Final Round">
+                        Final Round
+                    </option>
+
+                </select>
+
+
+                <label>Interviewer</label>
+
+                <input
+                    type="text"
+                    id="interviewer"
+                    placeholder="Enter interviewer name"
+                    required
+                >
+
+
+                <label>Interview Status</label>
+
+                <select id="interviewStatus" required>
+
+                    <option value="">
+                        Select Status
+                    </option>
+
+                    <option value="Scheduled">
+                        Scheduled
+                    </option>
+
+                    <option value="Completed">
+                        Completed
+                    </option>
+
+                    <option value="Selected">
+                        Selected
+                    </option>
+
+                    <option value="Rejected">
+                        Rejected
+                    </option>
+
+                </select>
+
+
+                <label>Feedback</label>
+
+                <textarea
+                    id="feedback"
+                    rows="4"
+                    placeholder="Enter interview feedback">
+                </textarea>
+
+
+                <button type="submit">
+                    Schedule Interview
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="candidates-container">
+
+            <h2>Interview Records</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Date</th>
+                            <th>Round</th>
+                            <th>Interviewer</th>
+                            <th>Status</th>
+                            <th>Feedback</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="interviewTableBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

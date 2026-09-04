@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candidates - HR Recruitment Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HR Recruitment Tracker</h1>
+        <p>Manage candidates and track the recruitment process</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="add-candidate.html">Add Candidate</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="analytics.html">Analytics</a>
+    </nav>
+
+    <main>
+
+        <section class="candidates-container">
+
+            <div class="page-header">
+                <h2>Candidate Management</h2>
+
+                <a href="add-candidate.html" class="add-button">
+                    + Add Candidate
+                </a>
+            </div>
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    id="searchCandidate"
+                    placeholder="Search candidate..."
+                >
+
+                <select id="statusFilter">
+                    <option value="">All Status</option>
+                    <option value="Applied">Applied</option>
+                    <option value="Shortlisted">Shortlisted</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Selected">Selected</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Department</th>
+                            <th>Experience</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="candidateTableBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Candidate - HR Recruitment Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HR Recruitment Tracker</h1>
+        <p>Manage candidates and track the recruitment process</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="#">Candidates</a>
+        <a href="add-candidate.html">Add Candidate</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="#">Analytics</a>
+    </nav>
+
+    <main>
+
+        <section class="form-container">
+
+            <h2>Add New Candidate</h2>
+
+            <form id="candidateForm">
+
+                <label>Candidate ID</label>
+                <input type="text" id="candidateId" required>
+
+                <label>Candidate Name</label>
+                <input type="text" id="candidateName" required>
+
+                <label>Email</label>
+                <input type="email" id="email" required>
+
+                <label>Phone</label>
+                <input type="tel" id="phone" required>
+
+                <label>Position Applied</label>
+                <input type="text" id="position" required>
+
+                <label>Department</label>
+                <select id="department" required>
+                    <option value="">Select Department</option>
+                    <option>Human Resources</option>
+                    <option>Data Analytics</option>
+                    <option>Finance</option>
+                    <option>Marketing</option>
+                    <option>Information Technology</option>
+                </select>
+
+                <label>Experience</label>
+                <input type="number" id="experience" min="0" required>
+
+                <label>Skills</label>
+                <input type="text" id="skills" placeholder="Example: Excel, Python, Power BI" required>
+
+                <label>Application Date</label>
+                <input type="date" id="applicationDate" required>
+
+                <label>Status</label>
+                <select id="status" required>
+                    <option value="">Select Status</option>
+                    <option>Applied</option>
+                    <option>Shortlisted</option>
+                    <option>Interview</option>
+                    <option>Selected</option>
+                    <option>Rejected</option>
+                </select>
+
+                <button type="submit">Add Candidate</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
